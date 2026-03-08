@@ -5,8 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Coding Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        .portfolio-list { line-height: 1.6; }
+        body { 
+            font-family: Arial, sans-serif; 
+            padding: 20px; 
+            background-color: #e8f5e9; 
+        }
+        
+        h1 { 
+            background-color: #0056b3; 
+            color: white; 
+            padding: 15px 20px; 
+            margin-top: 0; 
+            border-radius: 5px; 
+        }
+
+        h2 {
+            margin-left: 30px;
+        }
+        
+        .portfolioList { 
+            line-height: 1.6; 
+            list-style-type: none; 
+            padding-left: 0; 
+            margin-left: 75px;
+        }
+
+        .portfolioList li {
+            margin-bottom: 20px; 
+        }
+
+        .portfolioList li {
+            margin-bottom: 20px; 
+            display: flex;
+            align-items: center; 
+        }
+
+        .portfolioList li::before {
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: #000000;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .project_btn {
+            display: inline-block;
+            background-color: #28a745; 
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none; 
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s; 
+        }
+
+        .project_btn:hover {
+            background-color: #1e7e34; 
+        }
     </style>
 </head>
 <body>
@@ -14,10 +71,8 @@
     <h1>My Web Development Portfolio</h1>
     
     <h2>Quarter 4</h2>
-    <ul class="portfolio-list">
-        <li>
-            <a href="public/q41gMagnesiumCATAPANG.html">Graded Exercise 1: Movie Tracker</a>
-        </li>
+    <ul class="portfolioList">
+        <li><a href="public/q41gMagnesiumCATAPANG.html" class="project_btn">Graded Exercise 1 (With update from 2nd Graded): Movie Tracker</a></li>
     </ul>
 
 </body>
